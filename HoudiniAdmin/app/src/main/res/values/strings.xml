@@ -1,0 +1,11 @@
+<resources>
+    <string-array name="brand_names">
+        <item>Nike</item>
+        <item>Adidas</item>
+        <item>Reebok</item>
+        <item>Puma</item>
+        <item>Fila</item>
+    </string-array>
+
+    <string name="app_name">Houdini Admin</string>
+</resources>

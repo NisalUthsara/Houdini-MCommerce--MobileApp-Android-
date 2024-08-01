@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity"
+    android:background="@drawable/ggse">
+
+
+        <az.zero.az_edit_text.AZEditText
+            android:id="@+id/userProfUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="32dp"
+            app:activeStrokeColor="#4CAF50"
+            app:containerRadius="8dp"
+            app:containerStrokeWidth="1dp"
+            app:hint="Username"
+            app:inactiveStrokeColor="#F1F1F1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startDrawable="@drawable/baseline_account_circle_24"
+            app:textSize="16sp" />
+
+        <az.zero.az_edit_text.AZEditText
+            android:id="@+id/userProfUserEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginEnd="32dp"
+            app:activeStrokeColor="#4CAF50"
+            app:containerRadius="8dp"
+            app:containerStrokeWidth="1dp"
+            app:hint="Email"
+            app:inactiveStrokeColor="#F1F1F1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startDrawable="@drawable/email_icon"
+            app:textSize="16sp" />
+
+        <az.zero.az_edit_text.AZEditText
+            android:id="@+id/userProfUserAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="420dp"
+            android:layout_marginEnd="32dp"
+            app:activeStrokeColor="#4CAF50"
+            app:containerRadius="8dp"
+            app:containerStrokeWidth="1dp"
+            app:hint="Address"
+            app:inactiveStrokeColor="#F1F1F1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startDrawable="@drawable/baseline_location_city_24"
+            app:textSize="16sp" />
+
+        <az.zero.az_edit_text.AZEditText
+            android:id="@+id/userProfUserContact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginEnd="32dp"
+            app:activeStrokeColor="#4CAF50"
+            app:containerRadius="8dp"
+            app:containerStrokeWidth="1dp"
+            app:hint="Contact No"
+            app:inactiveStrokeColor="#F1F1F1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startDrawable="@drawable/baseline_local_phone_24"
+            app:textSize="16sp" />
+
+        <Button
+            android:id="@+id/userProfSaveBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="Save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userProfUserContact" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="User Profile"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/userProfImgBtn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18"
+            app:srcCompat="@drawable/userdefault" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

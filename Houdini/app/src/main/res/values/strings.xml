@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="web_client_id">600091110038-a9pf2fatl8kboriipuqtthjs720k7731.apps.googleusercontent.com</string>
+
+    <string name="app_name">Houdini</string>
+    <string name="side_nav_home_title">Home</string>
+    <string name="side_nav_product_title">Product</string>
+    <string name="side_nav_cart_title">Cart</string>
+    <string name="side_nav_wishlist_title">Wishlist</string>
+    <string name="side_nav_setting_title">Settings</string>
+    <string name="side_nav_login_title">Login</string>
+    <string name="side_nav_logout_title">Logout</string>
+
+    <string name="drawer_open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation Drawer</string>
+    <string name="rupee_mark">Rs.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="logout_dialog">Are you sure you want to log out?</string>
+    <string name="logout_dialog_OK">Yes</string>
+    <string name="logout_dialog_NO">Cancel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

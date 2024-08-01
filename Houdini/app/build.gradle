@@ -1,0 +1,64 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'lk.javainstitute.houdini'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "lk.javainstitute.houdini"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.test.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    //firebase
+    implementation platform('com.google.firebase:firebase-bom:32.6.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation("com.google.firebase:firebase-storage")
+    implementation("com.google.firebase:firebase-firestore")
+
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.8'
+    //btn library
+    implementation 'com.barelogics:sahana.customButton:1.7'
+    //EditText Lib
+    implementation 'com.github.omarzer0:az-edittext:0.1.2'
+    //Button lib
+    implementation 'io.github.nikartm:fit-button:2.0.0'
+    //QTy picker
+    implementation "com.github.kojofosu:Quantitizer:1.6.8"
+    //image slider
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+    //circle menu
+    implementation 'com.ramotion.circlemenu:circle-menu:0.3.2'
+}

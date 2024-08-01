@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductUpdateActivity">
+
+    <ImageButton
+        android:id="@+id/productUpImageBtn"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/productUpProductName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Product name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productUpImageBtn" />
+
+    <EditText
+        android:id="@+id/productUpProductPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Product price"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/productUpProductName"
+        app:layout_constraintStart_toStartOf="@+id/productUpProductName"
+        app:layout_constraintTop_toBottomOf="@+id/productUpProductName" />
+
+    <EditText
+        android:id="@+id/productUpProductDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Product description"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/productUpProductPrice"
+        app:layout_constraintStart_toStartOf="@+id/productUpProductPrice"
+        app:layout_constraintTop_toBottomOf="@+id/productUpProductPrice" />
+
+    <EditText
+        android:id="@+id/productUpProductQty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Product quantity"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/productUpProductDesc"
+        app:layout_constraintStart_toStartOf="@+id/productUpProductDesc"
+        app:layout_constraintTop_toBottomOf="@+id/productUpProductDesc" />
+
+    <Button
+        android:id="@+id/productUpSaveBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/productUpProductQty"
+        app:layout_constraintStart_toStartOf="@+id/productUpProductQty"
+        app:layout_constraintTop_toBottomOf="@+id/productUpProductQty" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Update your product"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

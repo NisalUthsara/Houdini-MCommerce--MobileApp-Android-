@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="icons">
+        <item>@drawable/home_outline</item>
+        <item>@drawable/settings_outline</item>
+        <item>@drawable/cart_outline</item>
+        <item>@drawable/baseline_account_circle_24</item>
+<!--        <item>@drawable/email_icon</item>-->
+    </array>
+    <array name="colors">
+        <item>@color/white</item>
+        <item>@android:color/holo_blue_light</item>
+        <item>@color/white</item>
+        <item>@android:color/holo_green_dark</item>
+        <item>@color/white</item>
+    </array>
+</resources>

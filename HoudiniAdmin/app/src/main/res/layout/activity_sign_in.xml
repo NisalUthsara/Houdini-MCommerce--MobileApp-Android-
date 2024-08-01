@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="166dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Login to Your Account"
+        android:textAlignment="center"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <az.zero.az_edit_text.AZEditText
+        android:id="@+id/AZEditText1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="32dp"
+        app:activeStrokeColor="#4CAF50"
+        app:containerRadius="8dp"
+        app:containerStrokeWidth="1dp"
+        app:hint="Email"
+        app:inactiveStrokeColor="#F1F1F1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startDrawable="@drawable/email_icon"
+        app:textSize="16sp" />
+
+    <az.zero.az_edit_text.AZEditText
+        android:id="@+id/AZEditText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:activeStrokeColor="#4CAF50"
+        app:containerRadius="8dp"
+        app:containerStrokeWidth="1dp"
+        app:hint="Password"
+        app:inactiveStrokeColor="#F1F1F1"
+        app:layout_constraintEnd_toEndOf="@+id/AZEditText1"
+        app:layout_constraintStart_toStartOf="@+id/AZEditText1"
+        app:layout_constraintTop_toBottomOf="@+id/AZEditText1"
+        app:startDrawable="@drawable/pw_icon"
+        app:passwordHiddenDrawable="@drawable/eye_close_icon"
+        app:handlePassword="true"
+        app:inputType="textPassword"
+        app:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:text="Remember me"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#2196F3"
+        android:text="Sign In"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
